@@ -1,0 +1,9 @@
+.mode-line {
+    padding: 0px;
+    border: 0px none;
+    background-color: #222222;
+}
+
+.mode-line label {
+    color: white;
+}
