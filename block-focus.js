@@ -5,13 +5,13 @@ function focusblock (buffer) {
     s.document = buffer.document.wrappedJSObject;
     Components.utils.evalInSandbox(
         "(function () {\
-            function nothing () {}\
-            if (! document.forms)\
-                return;\
-            for (var i = 0, nforms = document.forms.length; i < nforms; i++) {\
-              for (var j = 0, nels = document.forms[i].elements.length; j < nels; j++)\
-                document.forms[i].elements[j].focus = nothing;\
-            }\
+function nothing () {}\
+if (! document.forms)\
+return;\
+for (var i = 0, nforms = document.forms.length; i < nforms; i++) {\
+for (var j = 0, nels = document.forms[i].elements.length; j < nels; j++)\
+document.forms[i].elements[j].focus = nothing;\
+}\
 })();",
         s);
 }

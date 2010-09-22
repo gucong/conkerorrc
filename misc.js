@@ -35,10 +35,10 @@ url_completion_use_webjumps = true;
 
 // test
 // define_key(content_buffer_normal_keymap, "C-w",
-// 		   function (I) {
-// 			   I.window.minibuffer.message(
-// 				   I.buffer.display_uri_string)
-// 		   });
+//         function (I) {
+//             I.window.minibuffer.message(
+//                 I.buffer.display_uri_string)
+//         });
 
 // // disable scrollbars
 // function disable_scrollbars (buffer) {

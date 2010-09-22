@@ -13,30 +13,30 @@ tree.completions treechildren { border: none !important; }
 
 tree.completions treecol { -moz-binding: none !important; }
 tree.completions {
-  -moz-appearance: none !important;
-  border: 0px none !important;
-  border-top: 0px none !important;
-  background-color: white !important;
-  -moz-border-top-colors: -moz-initial !important;
-  color: black !important;
+    -moz-appearance: none !important;
+    border: 0px none !important;
+    border-top: 0px none !important;
+    background-color: white !important;
+    -moz-border-top-colors: -moz-initial !important;
+    color: black !important;
 }
 
 tree.completions treechildren::-moz-tree-row {
-  background-color: white !important;
-  border: none;
+    background-color: white !important;
+    border: none;
 }
 
 tree.completions treechildren::-moz-tree-row(current) {
-  background-color: #535d6c !important;
-  color: white;
+    background-color: #535d6c !important;
+    color: white;
 }
 
 tree.completions treechildren::-moz-tree-cell-text(completion-description) {
-  color: black !important;
-  font-weight: bold !important;
+    color: black !important;
+    font-weight: bold !important;
 }
 
 tree.completions treechildren::-moz-tree-cell-text(current) {
-  color: white !important;
+    color: white !important;
 }
 

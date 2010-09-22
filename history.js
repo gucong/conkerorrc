@@ -21,5 +21,5 @@ function history_clear () {
 };
 
 interactive("history-clear",
-    "Clear the history.",
-    history_clear);
+            "Clear the history.",
+            history_clear);
