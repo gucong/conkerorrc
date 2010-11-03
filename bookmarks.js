@@ -14,8 +14,8 @@ define_key(content_buffer_normal_keymap, "* b", "browser-object-bookmarks");
 
 // remove a bookmark
 
-interactive("remove-bookmark", "Remove a bookmark",
-            function delete_bookmark (I) {
+interactive("bookmark-remove", "Remove a bookmark",
+            function bookmark_remove (I) {
                 var spec = yield read_browser_object(I);
                 var uri_string = load_spec_uri_string(spec);
                 try {

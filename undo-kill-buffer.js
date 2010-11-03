@@ -1,4 +1,4 @@
-// undo kill tab
+// undo kill buffer
 define_variable("killed_buffer_stack", new Array(), "A stack of recently killed buffers");
 
 add_hook("buffer_kill_before_hook",
