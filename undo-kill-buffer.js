@@ -7,6 +7,7 @@ add_hook("buffer_kill_before_hook",
              return true;
          });
 
+// add hook running when killing a buffer
 function kill_buffer (buffer, force) {
     if (!buffer)
         return;

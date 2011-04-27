@@ -20,3 +20,5 @@ define_webjump("archwiki", "http://wiki.archlinux.org/index.php?search=%s");
 define_webjump("taobao", "http://s.taobao.com/search?q=%s");
 define_webjump("archlinux", "http://www.archlinux.org/packages/?q=%s");
 define_webjump("ip", "http://www.123cha.com/ip/?q=%s");
+define_webjump("simplecd", "http://www.simplecd.org/?q=%s");
+define_webjump("hatrix", "http://hatrix.org/files/%s");

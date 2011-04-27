@@ -27,8 +27,8 @@ tree.completions treechildren::-moz-tree-row {
 }
 
 tree.completions treechildren::-moz-tree-row(current) {
-    background-color: #535d6c !important;
-    color: white;
+    background-color: #BFBFBF !important;
+    color: black;
 }
 
 tree.completions treechildren::-moz-tree-cell-text(completion-description) {
@@ -37,6 +37,6 @@ tree.completions treechildren::-moz-tree-cell-text(completion-description) {
 }
 
 tree.completions treechildren::-moz-tree-cell-text(current) {
-    color: white !important;
+    color: black !important;
 }
 
