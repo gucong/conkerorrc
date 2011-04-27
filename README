@@ -19,3 +19,6 @@ Scrolling by a whole page sometimes is just too much.  What about an arbitrary p
 
 undo-kill-buffer.js :
 A simple way to remember and re-open killed buffers.  Only the URLs are stored, things like buffer history, position are lost.  Note: the meaning of buffer_kill_before_hook is disputed and actually is altered here.
+
+browser-relationship.js :
+Add support for some Chinese version of next/previous links.
