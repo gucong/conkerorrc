@@ -22,3 +22,6 @@ A simple way to remember and re-open killed buffers.  Only the URLs are stored, 
 
 browser-relationship.js :
 Add support for some Chinese version of next/previous links.
+
+zoom-width.js :
+Zoom pages without changing text size.  This deals with pages that do not fit my slim horizontal resolution.
