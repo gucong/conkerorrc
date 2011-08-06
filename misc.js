@@ -12,6 +12,7 @@ add_hook("mode_line_hook", mode_line_adder(buffer_count_widget), true);
 // key bindings
 key_bindings_ignore_capslock = true;
 define_key(content_buffer_normal_keymap, "d", "follow-new-buffer-background");
+define_key(content_buffer_normal_keymap, "delete", "delete");
 
 // extension compatibility
 user_pref("extensions.checkCompatibility", false);
@@ -26,7 +27,7 @@ require("page-modes/google-maps.js");
 require("session.js");
 
 // user agent
-default_pref("general.useragent.extra.firefox", "firefox/3.6");
+default_pref("general.useragent.extra.firefox", "firefox/5.0");
 
 // default completion
 url_completion_use_bookmarks = false;
