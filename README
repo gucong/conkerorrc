@@ -31,3 +31,6 @@ I hate the SPACE automatically inserted between completion and remaining substri
 
 download-path-history.js :
 When I want to download a file, I may want to save it to a directory the same as some previous download.  Unfortunately, the default way to browse history also replace the filename to a previous download.  Why not combine the parent path in history entries with current filename?
+
+check-overwrite.js :
+More ways to handle existing file when you want to download.  You can choose to perform 1. Overwrite, 2. Automatically append a number, 3 Re-input the filename.
