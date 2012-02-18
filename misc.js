@@ -17,6 +17,7 @@ key_bindings_ignore_capslock = true;
 define_key(content_buffer_normal_keymap, "d", "follow-new-buffer-background");
 define_key(content_buffer_normal_keymap, "delete", "delete");
 define_key(content_buffer_normal_keymap, "* f", "browser-object-file");
+undefine_key(default_global_keymap, "C-x C-c");
 
 // extension compatibility
 user_pref("extensions.checkCompatibility", false);
@@ -30,6 +31,13 @@ require("page-modes/google-maps.js");
 
 // session management
 require("session.js");
+session_auto_save_auto_load = "prompt";
+session_auto_save_auto_load_fn = session_auto_save_load_window_current_replace;
+
+// new buffer position
+new_buffer_position = buffer_position_end_by_type;
+new_buffer_with_opener_position = buffer_position_end_by_type;
+special_buffer.prototype.default_position = buffer_position_end_by_type;
 
 // default completion
 url_completion_use_bookmarks = false;
