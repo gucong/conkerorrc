@@ -47,6 +47,9 @@ url_completion_use_webjumps = true;
 // download target
 download_buffer_automatic_open_target = OPEN_NEW_BUFFER;
 
+// smooth scrolling
+user_pref("general.smoothScroll", false);
+
 // test
 // define_key(content_buffer_normal_keymap, "C-w",
 //         function (I) {

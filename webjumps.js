@@ -20,5 +20,9 @@ define_webjump("archwiki", "http://wiki.archlinux.org/index.php?search=%s");
 define_webjump("taobao", "http://s.taobao.com/search?q=%s");
 define_webjump("archlinux", "http://www.archlinux.org/packages/?q=%s");
 define_webjump("ip", "http://www.123cha.com/ip/?q=%s");
-define_webjump("simplecd", "http://www.simplecd.org/?q=%s");
-define_webjump("hatrix", "http://hatrix.org/files/%s");
+define_webjump("alpha", "http://www36.wolframalpha.com/input/?i=%s");
+define_webjump("amazon", "http://www.amazon.com/exec/obidos/external-search/?field-keywords=%s&mode=blended");
+define_webjump("youtube", "http://www.youtube.com/results?search_query=%s&search=Search");
+
+require("page-modes/wikipedia.js");
+define_wikipedia_webjumps("zh");

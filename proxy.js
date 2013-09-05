@@ -9,7 +9,13 @@ function set_proxy_session (window, server, port) {
         window.minibuffer.message("Direction connection to the internet enabled for this session");
     } else {
         if (server == "") server = proxy_server_default;
+        else proxy_server_default = server;
+
         if (port == "") port = proxy_port_default;
+        else {
+            port = parseInt(port);
+            proxy_port_default = port;
+        }
 
         session_pref('network.proxy.ftp',    server);
         session_pref('network.proxy.gopher', server);
