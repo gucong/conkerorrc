@@ -24,10 +24,13 @@ user_pref("extensions.checkCompatibility", false);
 user_pref("extensions.checkUpdateSecurity", false);
 user_pref("general.useragent.compatMode.firefox", true);
 
+// user agent
+require("user-agent-policy");
+set_user_agent(user_agent_firefox());
+
 // page modes
 require("page-modes/google-search-results.js");
 require("page-modes/gmail.js");
-require("page-modes/google-maps.js");
 
 // session management
 require("session.js");
@@ -63,5 +66,3 @@ user_pref("general.smoothScroll", false);
 // }
 // add_hook ("content_buffer_location_change_hook", disable_scrollbars);
 // remove_hook ("content_buffer_location_change_hook", disable_scrollbars);
-
-

@@ -23,6 +23,13 @@ define_webjump("ip", "http://www.123cha.com/ip/?q=%s");
 define_webjump("alpha", "http://www36.wolframalpha.com/input/?i=%s");
 define_webjump("amazon", "http://www.amazon.com/exec/obidos/external-search/?field-keywords=%s&mode=blended");
 define_webjump("youtube", "http://www.youtube.com/results?search_query=%s&search=Search");
+define_webjump("maps", "https://maps.google.com/maps?q=%s");
+
+opensearch_load_paths.unshift(make_file("~/.conkerorrc/search-engines"));
+define_opensearch_webjump("bing", "bing.xml");
+//define_webjump("bing", "https://www.bing.com/search?q=%s");
+//define_webjump("maps", "https://www.bing.com/maps/?q=%s");
+//define_webjump("maps", "https://maps.yahoo.com/b/#q1=%s");
 
 require("page-modes/wikipedia.js");
 define_wikipedia_webjumps("zh");
