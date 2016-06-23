@@ -40,3 +40,6 @@ Modified process spawning functions to support unicode arguments.
 
 *** hide-modeline-minibuffer.js
 Better handling of modeline/minibuffer autohiding.
+
+*** session-backup-auto-save.js
+Because auto-save session file is overwritten at launch, it is easy to loose them.   Now the auto-save is copied at launch to a timestamped backup file, so that you can manually load it in case auto-save itself is corrupted.  Also implements a command to purge all backup files.

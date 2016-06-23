@@ -31,11 +31,13 @@ set_user_agent(user_agent_firefox());
 // page modes
 require("page-modes/google-search-results.js");
 require("page-modes/gmail.js");
-
-// session management
-require("session.js");
-session_auto_save_auto_load = "prompt";
-session_auto_save_auto_load_fn = session_auto_save_load_window_current_replace;
+require("feedly");
+define_keymaps_page_mode("feedly-mode",
+    build_url_regexp($domain = "feedly",
+                     $tlds = ["com"],
+                     $allow_www = true),
+    { normal: feedly_keymap },
+    $display_name = "Feedly");
 
 // new buffer position
 new_buffer_position = buffer_position_end_by_type;

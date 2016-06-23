@@ -7,6 +7,7 @@ browser_relationship_patterns[RELATIONSHIP_NEXT] =
      /\xCFC2\xD2BB\xD2B3/, //下一页 gbk
      /\u4E0B\u4E00\u5F20/, //下一张 unicode
      /\xCFC2\xD2BB\xD5C5/, //下一张 gbk
+     /\u4E0B\u9801/, //下頁 unicode
      new RegExp("^>$","i"),
      new RegExp("^(>>|»)$","i"),
      new RegExp("^(>|»)","i"),
@@ -20,6 +21,7 @@ browser_relationship_patterns[RELATIONSHIP_PREVIOUS] =
      /\xC9CF\xD2BB\xD2B3/, //上一页 gbk
      /\u4E0A\u4E00\u5F20/, //上一张 unicode
      /\xC9CF\xD2BB\xD5C5/, //上一张 gbk
+     /\u4E0A\u9801/, //上頁 unicode
      new RegExp("^<$","i"),
      new RegExp("^(<<|«)$","i"),
      new RegExp("^(<|«)","i"),
