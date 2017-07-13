@@ -12,7 +12,7 @@ giftcardwiki_completer.prototype = {
     toString: function () "#<giftcardwiki_completer>",
     complete: function (input, pos) {
         let str = input.substring(0,pos);
-        let lspec = load_spec({uri: "http://www.giftcardwiki.com/giftcards/data/searchData/"});
+        let lspec = load_spec({uri: "http://www.giftcardwiki.com/api/v1/gift-cards/search-hints/"});
         let result = yield send_http_request(lspec);
         let all_data = JSON.parse(result.responseText);
         delete this.result;
