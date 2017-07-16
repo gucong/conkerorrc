@@ -25,12 +25,12 @@ user_pref("extensions.checkUpdateSecurity", false);
 user_pref("general.useragent.compatMode.firefox", true);
 
 // user agent
-require("user-agent-policy");
-set_user_agent(user_agent_firefox());
+set_user_agent("Mozilla/5.0 (X11; Linux x86_64; rv:45.9) Gecko/20100101 Goanna/3.2 Firefox/45.9 PaleMoon/27.4.0 conkeror/1.0.3");
 
 // page modes
-require("page-modes/google-search-results.js");
-require("page-modes/gmail.js");
+require("google-search-results");
+require("github");
+require("gmail");
 require("feedly");
 define_keymaps_page_mode("feedly-mode",
     build_url_regexp($domain = "feedly",
