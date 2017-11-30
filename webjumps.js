@@ -26,6 +26,7 @@ define_webjump("youtube", "http://www.youtube.com/results?search_query=%s&search
 define_webjump("maps", "https://maps.google.com/maps?q=%s");
 define_webjump("ytenx", "http://ytenx.org/zim?dzih=%s&dzyen=1&jtkb=1&jtdt=1");
 define_webjump("cashbackmonitor", "http://www.cashbackmonitor.com/search-store/?q=%s");
+define_webjump("basketball-reference", "https://www.basketball-reference.com/search/search.fcgi?search=%s");
 
 opensearch_load_paths.unshift(make_file("~/.conkerorrc/search-engines"));
 define_opensearch_webjump("bing", "bing.xml");
