@@ -4,8 +4,9 @@ function giftcardwiki_completer () {
     keywords(arguments);
     completer.call(this, forward_keywords(arguments));
     this.get_string = function (x) x.name;
-    this.get_description = function (x) (x.d*100).toFixed(1) + "% off,                    " + x.q.toFixed(0) + " cards";
+    this.get_description = function (x) (x.d*100).toFixed(1) + "% off, " + x.q.toFixed(0) + " cards";
 }
+
 giftcardwiki_completer.prototype = {
     constructor: giftcardwiki_completer,
     __proto__: completer.prototype,
@@ -19,12 +20,11 @@ giftcardwiki_completer.prototype = {
         delete this.lspec;
         let c = this;
         var narrowed = all_data.filter(function (x) {
-            var s = c.get_string(x);
-            var regex = new RegExp(str, 'i');
-            return regex.test(s);
+            let regex = new RegExp(str, 'i');
+            return regex.test(c.get_string(x));
         });
         yield co_return(new completions(this, narrowed));
     }
 };
 
-define_webjump("wikigiftcard", "http://www.giftcardwiki.com/giftcards/%s", $completer=new giftcardwiki_completer);
+define_webjump("cardwiki", "http://www.giftcardwiki.com/giftcards/%s", $completer=new giftcardwiki_completer);
